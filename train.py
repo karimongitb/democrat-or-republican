@@ -33,7 +33,7 @@ CHECKPOINT_PATH = "./checkpoints"
 ds = load_dataset("Jacobvs/PoliticalTweets")
 
 latest = max(ds["train"]["date"],
-             key=lambda s: datetime.fromisoformat(s))
+             key=lambda s: datetime.fromisoformat(s)) # 2023-02-19 23:32:00
 print(f"The most recent tweet on the dataset was made on: {latest}")
 
 pattern = re.compile(r" https://t\.co/\S+") # link pattern
