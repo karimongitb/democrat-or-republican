@@ -19,7 +19,7 @@ evaluation results with the basic fast settings fom train.py, highly recommended
 ## limitations & biases
 - short answer: there are many.
 - long answer:
-  - not everyone in the Democratic or Republican party share the same views. so a generation cannot represent EVERYONE in that party
+  - not everyone in the Democratic or Republican party share the same views. so a generation/tweet cannot represent EVERYONE in that party
   - tweet could contain sarcasm or simple comments, affecting results
   - could over- or under-represent demographics and regions (distributional bias)
   - the most recent tweet in the dataset was posted on 2023-02-19 23:32:00, politics change and may not reflect the party/politician's current view
