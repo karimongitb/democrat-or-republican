@@ -25,3 +25,17 @@ evaluation results with the basic fast settings fom train.py, highly recommended
   - the most recent tweet in the dataset was posted on 2023-02-19 23:32:00, politics change and may not reflect the party/politician's current view
   - short tweets (and thus prompts) lack context and could produce seemingly random generations
   - etc...
+
+## evaluations
+- an incredibly basic "benchmark" or "evaluation", used part of, selecting 75 with seed 67, from the original test set in train.py to evaluate.
+- this model was trained in a rather basic manner meant for speed, thus, its accuracy could potentially even be improved.
+- some of the tweets could not be enough to identify the political party
+- there are many reasons why this is not exactly a good measure, such as sampling size and the fact that confidence tests have been omitted, etc. but it can still show something
+- note that the models were supplied with a well-structured prompt specifically tailored to work with the benchmark.
+
+| Model                  | Correct | Total | Accuracy (%) |
+|-----------------------:|--------:|------:|-------------:|
+| democrat-or-republican | 221      | 250    | **88.40**    |
+| DeepSeek-V3.1          | 221      | 250    | **88.40**    |
+| Qwen3-235B-A22B        | 221      | 250    | **88.40**    |
+| gpt-oss-120b           | 210      | 250    | **84.00**    |
