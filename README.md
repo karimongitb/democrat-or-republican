@@ -24,12 +24,13 @@ evaluation results with the basic fast settings fom train.py, highly recommended
   - could over- or under-represent demographics and regions (distributional bias)
   - the most recent tweet in the dataset was posted on 2023-02-19 23:32:00, politics change and may not reflect the party/politician's current view
   - short tweets (and thus prompts) lack context and could produce seemingly random generations
+  - specific messages but with keywords could potentially trigger a false-positive
   - etc...
 
 ## evaluations
-- an incredibly basic "benchmark" or "evaluation", used part of, selecting 75 with seed 67, from the original test set in train.py to evaluate.
+- an incredibly basic "benchmark" or "evaluation", used part of, selecting 250 with seed 67, from the original test set in train.py to evaluate.
 - this model was trained in a rather basic manner meant for speed, thus, its accuracy could potentially even be improved.
-- some of the tweets could not be enough to identify the political party
+- some of the tweets could not be enough to identify the political party, e.g. short, vague messages that could also be filtered out
 - there are many reasons why this is not exactly a good measure, such as sampling size and the fact that confidence tests have been omitted, etc. but it can still show something
 - note that the models were supplied with a well-structured prompt specifically tailored to work with the benchmark.
 
